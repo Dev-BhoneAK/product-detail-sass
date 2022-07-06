@@ -48,6 +48,6 @@
     @include displayFlex($columnGap: 20px);
   }
   .product-wrapper {
-    @include displayFlex($alignItems: flex-start);
+    @include displayFlex($alignItems: flex-start, $columnGap: 20px);
   }
 }

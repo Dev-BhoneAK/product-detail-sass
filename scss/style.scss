@@ -1,0 +1,11 @@
+@use "./base";
+@use "./top-header";
+@use "./bottom-header";
+@use "./breadcrumb";
+@use "./product-left";
+@use "./product-middle";
+@use "./product-right";
+@use "./_product-detail.scss";
+@use "./related-products";
+@use "./footer";
+@use "./mediaquery";

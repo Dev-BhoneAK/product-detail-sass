@@ -1,0 +1,5 @@
+@import "./common-func";
+.product-wrapper {
+  @include displayFlex($alignItems: flex-start);
+  flex-wrap: wrap;
+}

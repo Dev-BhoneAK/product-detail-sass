@@ -1,0 +1,93 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $primaryColor;
+  font-family: $fontStack;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $headerColor;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.product-accordion {
+  .card > * {
+    margin: 15px 0;
+  }
+  .card-header {
+    background-color: $secondaryColor;
+    padding: 10px;
+    border-bottom: 1px dashed $pTextColor;
+  }
+  .card-body {
+    p {
+      color: $pTextColor;
+      font-size: 14px;
+    }
+  }
+  .card-body > * {
+    margin: 15px 0;
+  }
+}
+
+.price-detail {
+  .del-price {
+    color: $pTextColor;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 10px;
+  }
+
+  .percent-off {
+    color: $percentOffColor;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+.primary-text {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+span.input-group-prepend:hover {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.fa-star {
+  color: $starColor;
+}
+
+.fa-star:last-child {
+  color: $noStarColor;
+}

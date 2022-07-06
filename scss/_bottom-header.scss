@@ -1,0 +1,27 @@
+@import "./common-func";
+
+.bottom-header {
+  .display-flex {
+    @include displayFlex();
+  }
+  .padding {
+    @include padding(30px, 0px);
+  }
+  .menu-left {
+    @include displayFlex($columnGap: 20px);
+  }
+
+  .menu-right {
+    @include displayFlex($columnGap: 20px);
+
+    .right-navbar {
+      display: none;
+    }
+    .main-menu {
+      @include displayFlex($columnGap: 20px);
+    }
+    .icon-nav {
+      @include displayFlex($columnGap: 20px);
+    }
+  }
+}

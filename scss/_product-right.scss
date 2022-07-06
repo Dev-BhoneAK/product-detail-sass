@@ -1,0 +1,102 @@
+@import "./common-func";
+@import "./variables";
+.product-right {
+  min-width: 350px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  text-align: center;
+  .top-section {
+    border-bottom: 1px dashed $pTextColor;
+  }
+  .top-section > * {
+    margin: 5px 0;
+  }
+  .top-section > *:last-child {
+    margin: 15px auto;
+  }
+  .color-variant {
+    @include displayFlex($columnGap: 10px);
+    width: 100px;
+    li {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+    li:nth-child(1) {
+      background-color: rgb(91, 56, 123);
+    }
+    li:nth-child(2) {
+      background-color: rgb(204, 51, 168);
+      box-shadow: 0 0 0 3px $borderColor;
+    }
+    li:nth-child(3) {
+      background-color: rgb(27, 210, 227);
+    }
+    li:hover {
+      cursor: pointer;
+    }
+  }
+
+  .size-box {
+    width: 160px;
+    @include displayFlex($columnGap: 10px);
+    li {
+      padding-top: 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #999;
+    }
+    li:first-child {
+      background-color: #efefef;
+    }
+    li:hover {
+      cursor: pointer;
+    }
+  }
+
+  .select-size {
+    h6 {
+      font-weight: bold;
+      font-size: 1rem;
+      text-transform: capitalize;
+    }
+  }
+  .select-size > * {
+    margin: 10px auto;
+  }
+  .select-size > *:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .input-number {
+    display: inline-block;
+    width: 80px;
+    padding: 10px 20px;
+    margin: -5px;
+    border: 1px solid #999;
+    text-align: center;
+  }
+  .angle-icon {
+    border: 1px solid #999;
+    background-color: #fff;
+    outline: none;
+    padding: 10px 20px;
+  }
+  .left-icon {
+    border-right: 0;
+  }
+  .product-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+
+.product-right > * {
+  margin: 15px 0;
+}
+.product-right > *:last-child {
+  margin: 30px 0;
+}

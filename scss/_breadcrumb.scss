@@ -1,0 +1,22 @@
+@import "./common-func";
+@import "./variables";
+
+.breadcrumb-section {
+  background-color: $secondaryColor;
+  color: $pTextColor;
+  margin-bottom: 30px;
+  .display-flex {
+    @include displayFlex();
+  }
+  .breadcrumb {
+    @include displayFlex($columnGap: 20px);
+  }
+  .padding {
+    @include padding(30px, 0px);
+  }
+  .page-title {
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+}

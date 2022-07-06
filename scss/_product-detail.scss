@@ -1,0 +1,10 @@
+@import "./variables";
+.product-detail {
+  margin-bottom: 4rem;
+  .detail-title {
+    font-size: 1rem;
+  }
+  .product-tab-discription > * {
+    margin: 20px 0;
+  }
+}

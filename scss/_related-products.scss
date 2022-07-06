@@ -1,0 +1,32 @@
+@import "./common-func";
+@import "./variables";
+.related-products {
+  img {
+    width: 160px;
+  }
+  .product-row {
+    @include displayFlex();
+    flex-wrap: wrap;
+    .product-box {
+      text-align: center;
+      .product-detail {
+        .product-name {
+          font-size: 1rem;
+          color: $pTextColor;
+        }
+        .product-price {
+          font-size: $secondaryFontSize;
+        }
+        .add-btn {
+          color: $buttonColor;
+        }
+      }
+      .product-detail > * {
+        margin: 5px 0;
+      }
+    }
+    .product-box > * {
+      margin: 15px 0;
+    }
+  }
+}
